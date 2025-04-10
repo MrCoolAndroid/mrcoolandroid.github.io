@@ -1,0 +1,275 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    margin: 0px;
+}
+
+.navBar {
+    border: 1px solid #333;
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    width: 80%;
+    margin: 0 auto;
+    top: 0;
+    z-index: 1000;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.navLinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.navLinks a {
+    transition: 0.3s ease;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    transition: background-size 0.3s ease;
+}
+
+.navLinks a:hover {
+    background-size: 100% 2px;
+}
+
+.flexBody {
+    margin-top: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.topRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+
+#profileBox p {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bodyBox {
+    flex: 1 1 500px;
+    padding: 1rem;
+    text-align: center;
+}
+
+#imageBox img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#profileBox h1 {
+    font-size: 50px;
+}
+
+.bottomRow {
+    padding: 1rem;
+    padding-left: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.bottomRow p {
+    font-size: 20px;
+}
+
+.abilitiesBox {
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    flex: 1 1 250px;
+    align-items: center;
+}
+
+.abilitiesBox:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.abilitiesBox i {
+    font-size: 100px;
+}
+
+.abilitiesBox p {
+    text-align: center;
+}
+
+.abilityText {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.abilitiesBox div {
+    display: inline-block;
+}
+
+.innerBox {
+    margin-left: 40px;
+}
+
+.innerBox div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#projectsRow {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#projectsRow h1 {
+    font-size: 45px;
+}
+
+.projectText {
+    padding-bottom: 45px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#projectsRow ul {
+    list-style: none;
+    margin-left: 0;
+    text-align: left;  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#projectsRow li {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 30%;
+    height: 40%;
+    flex: 1 1 250px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#projectsRow li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.imageDiv img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.itemDiv h2 {
+    margin-left: 15px;
+}
+
+.itemDiv p {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.itemDiv button {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.itemDiv button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#disabledButton {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    cursor: not-allowed;
+    font-size: 20px;
+}
+
+.contactRow h1 {
+    font-size: 45px;
+}
+
+.contactText {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.contactRow button {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contactRow button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contactRow a {
+    text-decoration: none;
+}
+
+#discord {
+    cursor: default;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    width: 100%;
+    height: 90px;
+}
+
+@media (max-width: 1000px) {
+    .flexBody {
+        margin-right: 0rem;
+    }
+    .bottomRow {
+        padding-left: 1rem;
+    }
+    .navLinks {
+        display: none;
+    }
+    .title {
+        margin: 0 auto;
+    }
+}
